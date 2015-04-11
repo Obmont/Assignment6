@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Assignment 6</title>
+    <link rel="stylesheet" type="text/css" href="styles/Assignment6.css"/>
+    <script src="js/Assignment6.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+    <h1>
+        Assignment 6
+    </h1>
+    
+    <hr>
+    
+    <select onchange="MenuChoice()" id="menu">
+        <option>Please select an Option</option>
+        <option>Create New Customer</option>
+        <option>Edit Customer Shipping Information</option>
+        <option>Delete Customer</option>
+    </select>
+    
+    <hr>
+    <section id="spacing"></section>
+    <section id="section1">
+        <h2>Create New Customer</h2>
+        <p>Please enter the information for the new customer:</p>
+        
+        <br>
+        
+        <p>Customer ID (5 uppercase letters):</p>
+        <input type="text" id="custid">
+        <br>
+        <p>Customer Name:</p>
+        <input type="text" id="custname">
+        <br>
+        <p>Customer City:</p>
+        <input type="text" id="custcity">
+        <br>
+        <br>
+        
+        <button onclick="CreateCustomer()">Create Customer</button>
+        <hr>
+        <br>
+        <label id="result1">Customer creation Success or Failure displayed here.</label>
+    </section>
+    
+    <section id="section2">
+        <h2>Edit Customer Shipping Information</h2>
+        <p>Please enter an Order ID followed by the changed shipping information:</p>
+        
+        <br>
+        
+        <p>Order ID:</p>
+        <input type="text" id="orderid">
+        <br>
+        <p>Shipping Name:</p>
+        <input type="text" id="shipname">
+        <br>
+        <p>Shipping Address:</p>
+        <input type="text" id="shipaddress">
+        <br>
+        <p>Shipping City:</p>
+        <input type="text" id="shipcity">
+        <br>
+        <p>Shipping Postal Code:</p>
+        <input type="text" id="shippostalcode">
+        <br>
+        <br>
+        
+        <button onclick="EditShippingInformation()">Update Information</button>
+        
+        <hr>
+        
+        <br>
+        
+        <label id="result2">Edit Success or Failure displayed here.</label>
+        
+    </section>
+    
+    <section id="section3">
+        <h2>Delete Customer</h2>
+        <p>Please enter the ID of the customer you want to delete:</p>
+        <input type="text" id="custdelete">
+        
+        <br>
+        <br>
+        
+        <button onclick="makesure()">Delete</button>
+        <hr>
+        
+        <br>
+        
+        <label id="result3">Deletion Success or Failure displayed here.</label>
+    </section>
+    </div>
+</body>
+</html>
